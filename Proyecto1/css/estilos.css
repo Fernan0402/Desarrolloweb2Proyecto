@@ -1,0 +1,992 @@
+												/*ESTILOS index.html*/
+
+*{
+	padding: 0;
+	margin: 0;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing: border-box;
+	font-family: arial;
+}
+
+::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+::-webkit-scrollbar
+{
+	width: 8px;
+	background-color: #F5F5F5;
+}
+::-webkit-scrollbar-thumb
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: black;
+}
+#a.active{
+	text-decoration: line-through;
+	color:#F4D042;
+}
+#a:hover{
+	color:#F4D042;
+	transition: all 0.5s;
+	border-bottom: 1px solid #f4d042;
+}
+#a{
+	display: inline-block;
+	border-bottom: 1px solid transparent;
+	border-top: 1px solid transparent;
+	padding: 10px 10px;
+	margin: 10px 20px;
+	color: white;
+	z-index: 10;
+	font-size: 15px;
+	text-decoration: none;
+	transition: all 0.3s;
+}
+.ul{
+	width: 100%;
+	z-index: 10;
+	position: fixed;
+	background: rgba(0,0,0,0.5);
+	border-top: 2px solid blue;
+	animation: opacidad 1s alternate;
+}
+.logo{
+	display: inline-block;
+	float: left;
+	position: absolute;
+	z-index: 1000;
+	position: fixed;
+}
+.h6{
+	position: absolute;
+	top: 45%;
+	color: white;
+	left: 1%;
+	font-size: 16px;
+	display: block;
+}
+.divname{
+	width: 100%;
+	height: 100%;
+}
+.name{
+	padding: 0px 5px;
+	position: absolute;
+	top: 50%;
+	right: 36%;
+	background: rgba(0,0,0,0.5);
+	color: white;
+	animation: abajo 1s alternate;
+}
+.matricula{
+	padding: 0px 5px;
+	right: 43%;
+	position: absolute;
+	top: 59%;
+	background: rgba(0,0,0,0.5);
+	color: white;
+	animation: abajo 1s alternate;
+}
+.color{
+	padding: 0px 5px;
+	position: absolute;
+	top: 40%;
+	background: rgba(0,0,0,0.5);
+	color: white;
+	right: 34%;
+	animation: abajo 1s alternate;
+}.c{color: #17E1F3;} .o{color: #F53333;} .l{color: yellow;} .oo{color: #27EF3A;}.r{color: #256FF8;}
+@keyframes abajo{
+	from {transform: scale(0.1);}
+	to {transform: scale(1);}
+}
+.text{
+	padding: 0px 5px;
+	position: absolute;
+	top: 70%;
+	background: rgba(0,0,0,0.5);
+	color: white;
+	right: 33%;	
+	font-size: 20px;
+}
+.slider{
+	position: static;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+.slider ul{
+	padding: 0;
+	display: flex;
+	width: 400%;
+	animation: cambio 20s alternate infinite linear;
+}
+.slider li{
+	list-style: none;
+	width: 100%;
+}
+.slider img{
+	width: 100%;
+	height: 100%;
+}
+@keyframes cambio{
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
+.imgmision{
+	width: 50px;
+	height: auto;
+}
+.mision{
+	width: 100%;
+	height: 50%;
+	padding: 30px 10%;
+	margin: 0;
+	background: white;
+	opacity: 0.9;
+	float: left;
+	text-align: center;
+}
+.h1m{
+	color: black;
+	padding: 10px 0px;
+}
+.pm{
+	color: black;
+	font-family: verdana;
+	font-size: 16px;
+	transition: all 0.3s;
+}
+.imgvision{
+	width: 50px;
+	height: auto;
+	background: white;
+}
+.h1v{
+	color: black;
+	padding: 10px 0px;
+}
+.pv{
+	color: black;
+	font-family: verdana;
+	font-size: 16px;
+	transition: all 0.3s;
+}
+.vision{
+	width: 100%;
+	height: 50%;
+	padding: 30px 20%;
+	margin: 0;
+	background: white;
+	opacity: 0.9;
+	float: left;
+	text-align: center;
+}
+.pm:hover{
+	transition: all 0.2s;
+	transform: scale(1.1);
+	color: black;
+}
+.pv:hover{
+	transition: all 0.2s;
+	transform: scale(1.1);
+	color: black;
+}
+.print{
+	background: url(../img/fondo/fondo.jpg);
+	width: 100%;
+	height: 850px;
+	background-size: cover;
+	background-attachment: fixed;
+}
+.arriba{
+	width: 100%;
+	height: 200px;
+	background: #151515;
+}
+.arriba img{
+	width: 47px;
+	height: 47px;
+	right: 49%;
+	cursor: pointer;
+	border: 1px solid transparent;
+	transition: all 0.5s;
+}.arriba img:hover{border-bottom:1px solid white; transition: all 0.5s;}
+.arriba p{
+	width: 100%;
+	position: absolute;
+	padding: 10px;
+	margin: 40px 0px;
+	color: white;
+	font-family: arial;
+	text-transform: capitalize;
+}
+.footer{
+	width: 100%;
+	display: inline-block;
+	background: #151515;
+}
+.copyright{
+	background: #151515;
+	color: white;
+	font-size: 15px;
+	border-bottom: 2px solid black;
+	padding: 5px;
+}
+.fb{
+	text-decoration: none;
+	background: #151515;
+	color: white;
+	border: 1px solid transparent;
+	width: 24.7%;
+	padding: 18px 0px;
+	text-align: center;
+	display: inline-block;
+	transition: all 0.5s;
+}.fb:hover{transition: all 0.5s; background: #3324FF; color: white; border-bottom: 1px solid transparent;}
+.ig{
+	text-decoration: none;
+	background: #151515;
+	color: white;
+	border: 1px solid transparent;
+	width: 24.7%;
+	padding: 18px 0px;
+	text-align: center;
+	display: inline-block;
+	transition: all 0.5s;
+}.ig:hover{transition: all 0.5s; background:#EE0568; color: white; border-bottom: 1px solid transparent;}
+.tw{
+	text-decoration: none;
+	color: white;
+	background:#151515;
+	border: 1px solid transparent;
+	width: 24.7%;
+	padding: 18px 0px;
+	text-align: center;
+	display: inline-block;
+	transition: all 0.5s;
+}.tw:hover{transition: all 0.5s; background:#03B7D8; color: white; border-bottom: 1px solid transparent;}
+.g{
+	text-decoration: none;
+	color: white;
+	background: #151515;
+	border: 1px solid transparent;
+	width: 24.7%;
+	padding: 18px 0px;
+	text-align: center;
+	display: inline-block;
+	transition: all 0.5s;
+}.g:hover{transition: all 0.5s; background: red; color:white; border-bottom: 1px solid transparent;}
+#aa.activeb{
+	text-decoration: line-through;
+	color:#F4D042;
+}
+#aa:hover{
+	color:#F4D042;
+	transition: all 0.5s;
+	border-bottom: 1px solid #f4d042;
+}
+#aa{
+	display: inline-block;
+	border-bottom: 1px solid transparent;
+	border-top: 1px solid transparent;
+	padding: 10px 10px;
+	margin: 10px 20px;
+	color: black;
+	z-index: 10;
+	font-size: 15px;
+	text-decoration: none;
+	transition: all 0.3s;
+}
+.ulb{
+	width: 100%;
+	z-index: 10;
+	position: fixed;
+	background: white;
+	opacity: 0.8;
+}
+.logob{
+	display: inline-block;
+	float: left;
+}
+
+.mouse-icon {
+  position: absolute;
+  border: 2px solid #2f2f2f;
+  background: #ffffff;
+  border-radius: 13px;
+  height: 40px;
+  width: 30px;
+  margin: 0 auto;
+  display: block;
+  left: 2%;
+  right: 0;
+  bottom: 100px;
+  z-index: 10;
+}
+
+.mouse-icon .scroll {
+  -webkit-animation-name: scrolling;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-delay: 0s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-play-state: running;
+  animation-name: scrolling;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+}
+.mouse-icon .scroll {
+  position: relative;
+  border-radius: 10px;
+  background: black;
+  width: 4px;
+  height: 8px;
+  top: 4px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@-webkit-keyframes scrolling  {
+  0%   { top:2px;  opacity: 0;}
+  30%  { top:8px; opacity: 1;}
+  100% { top:16px; opacity: 0;}
+}
+
+@keyframes scrolling  {
+  0%   { top:2px;  opacity: 0;}
+  30%  { top:8px; opacity: 1;}
+  100% { top:16px; opacity: 0;}
+}
+.mouse-icon .scroll {
+    position: relative;
+    border-radius: 10px;
+    background: black;
+    width: 4px;
+    height: 8px;
+    top: 4px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.mouse-icon .scroll {
+    -webkit-animation-name: scrolling;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-delay: 0s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-play-state: running;
+    animation-name: scrolling;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+
+										/*ESTILOS ventas_de_impresoras.html*/
+
+.h2modelo{
+	position: absolute;
+	top: 20%;
+	right: 32%;
+	color: #312828;
+}
+.hp img{	
+	width: 150px;
+	cursor: pointer;
+	padding: 10px;
+	transition: all 1s;
+	animation: mover 1s alternate ;
+}.hp img:hover{transform: scale(1.2); transition: all 0.5s;}
+.canon img{
+	width: 200px;
+	cursor: pointer;
+	padding: 10px;
+	transition: all 1s;
+	animation: mover 1s alternate;
+}.canon img:hover{transform: scale(1.2); transition: all 0.5s;}
+.dell img{
+	width: 140px;
+	cursor: pointer;
+	padding: 10px;
+	transition: all 1s;
+	animation: mover 1s alternate;
+}.dell img:hover{transform: scale(1.1); transition: all 0.5s;}
+.brother img{
+	width: 200px;
+	cursor: pointer;
+	padding: 10px;
+	transition: all 1s;
+	animation: mover 1s alternate;
+}.brother img:hover{transform: scale(1.2); transition: all 0.5s;}
+.epson img{
+	width: 150px;
+	cursor: pointer;
+	padding: 10px;
+	top: 20%;
+	transition: all 1s;
+	transform: scale(1.1);
+	animation: mover 1s alternate;
+}.epson img:hover{transform: scale(1.3); transition: all 0.5s;}
+.modeloimpresoras div{
+	padding: 20px;
+	display: inline-block;
+	width: 25%;
+	top: 380px;
+	height: 200px;
+}
+.modeloimpresoras{
+	position: absolute;
+	top: 100px;
+}
+.modeloimpresoras div p{
+	font-family: arial;
+	color: #441919;
+	animation: mover2 2s alternate;
+}
+
+@keyframes mover{
+	0% {transform: translate(260px);}
+}
+@keyframes mover2{
+	0% {transform: translate(-175px);}
+}
+
+												/*ESTILOS ofertas_de_impresoras.html*/
+
+.ofertas{
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	top: 15%;
+}
+.ofertas .antes{
+	width: 180px;
+	transition: all 0.5s;
+}.ofertas .antes:hover{}
+.ofertas p{
+	color: #221b1b5d;
+	font-weight: bold;
+	width: 80%;
+	left: 10%;
+	position: relative;
+	transition: all 0.5s;
+}
+.o1{
+	width: 35%;
+	float: left;
+	margin: 0px;
+	animation: aparecer 1s alternate;
+	padding: 50px 0px;
+	margin-left: 10%;
+}
+.o2{
+	width: 35%;
+	float: left;
+	margin: 0px;
+	animation: aparecer 1s alternate;
+	padding: 50px 0px;
+	margin-left: 10%;
+}
+.o3{
+	width: 35%;
+	float: left;
+	margin: 0px;
+	animation: aparecer 2s alternate;
+	padding: 50px 0px;
+	margin-left: 10%;
+}
+.o4{
+	width: 35%;
+	float: left;
+	margin: 0px;
+	animation: aparecer 2s alternate;
+	padding: 50px 0px;
+	margin-left: 10%;
+}
+.o5{
+	width: 35%;
+	float: left;
+	margin: 0px;
+	animation: aparecer 3s alternate;
+	padding: 50px 0px;
+	margin-left: 10%;
+}
+.o6{
+	width: 35%;
+	float: left;
+	margin: 0px;
+	animation: aparecer 3s alternate;
+	padding: 50px 0px;
+	margin-left: 10%;
+}
+.tachado{
+	text-decoration: line-through;
+	color: #9F9F9F;
+}
+.ahora a{
+	color: rgb(116, 116, 116);
+	text-decoration: none;
+	font-weight: bold;
+}.ahora a:hover{text-decoration: underline}
+@keyframes aparecer{
+	from {transform: scale(0.1);}
+	to {transform: scale(1);}
+}
+
+@keyframes apps {
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+.vaina{
+	position: absolute;
+	bottom: 0;
+	right: 48%;
+	position: fixed;
+}
+.cosa{
+	width: 35px;
+	background: black;
+	cursor: pointer;	 
+	border-radius: 20%;
+}
+
+.un_text{
+	position: absolute;
+	bottom: 50%;
+	position: fixed;
+	right: 1%;
+	width: 125px;
+}
+.dentro_text{
+	color: #cf2323;
+	font-size: 15px;
+	text-align: center;
+}
+
+															/*ESTILOS DE contacto.html*/
+
+.contacto{
+	width: 100%;
+	height: 750px;
+	background: url(../img/fondo/2.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	animation: opacidad 1s alternate;
+}
+.logitos{
+	left: 3%;
+	width: 40%;
+	font-size: 17px;
+	color: black;
+	background: rgba(0,0,0,0.5);
+	color: white;
+	position: absolute;
+	top: 35%;
+	font-weight: bold;
+	animation: opacidad 1s alternate;
+	padding: 2px;
+	border-radius: 3px;
+}
+.formulario{
+	width: 45%;
+	height: 425px;
+	right: 5%;
+	top: 35%;
+	position: absolute;
+}
+.nombre{
+	width: 60%;
+	padding: 10px;
+	margin: 10px;
+	background: white;
+	opacity: 0.8;
+	font-weight: bold;
+}
+.email{
+	width: 60%;
+	padding: 10px;
+	margin: 10px;
+	background: white;
+	opacity: 0.8;
+	font-weight: bold;
+}
+.telefono{
+	width: 55%;
+	padding: 10px;
+	margin: 10px;
+	background: white;
+	opacity: 0.8;
+	font-weight: bold;
+}
+.mensaje{
+	width: 100%;
+	padding: 20px;
+	margin: 10px;
+	background: white;
+	opacity: 0.8;
+	font-weight: bold;
+}
+.enviar{
+	width: 100%;
+	padding: 10px;
+	margin: 10px;
+	cursor: pointer;
+	background: blue;
+	color: white;
+	font-weight: bold;
+	transition: all 0.5s;
+	border: 2px solid transparent;
+}.enviar:hover{ transition: all 0.5s; background: #314CF5}
+label{font-weight: bold; background: rgba(0,0,0,0.7); color: white; padding: 7px; border-radius: 3px; opacity: 0.9;}
+.hijo{
+	width: 100%;
+	height: 350px;
+}
+@keyframes opacidad{
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+
+											/*ESTILOS DE nosotros.html*/
+#ac.activeb{
+	text-decoration: line-through;
+	color:#F4D042;
+}
+#ac:hover{
+	color:#F4D042;
+	transition: all 0.5s;
+	border-bottom: 1px solid #f4d042;
+}
+#ac{
+	display: inline-block;
+	border-bottom: 1px solid transparent;
+	border-top: 1px solid transparent;
+	padding: 10px 10px;
+	margin: 10px 20px;
+	color: white;
+	z-index: 10;
+	font-size: 15px;
+	text-decoration: none;
+	transition: all 0.3s;
+}
+.ulc{
+	width: 100%;
+	z-index: 10;
+	position: fixed;
+	background: transparent;
+	border-top: 2px solid blue;
+	animation: opacidad 1s alternate;
+}
+.logoz{
+	display: inline-block;
+	float: left;
+}
+.sobrenosotros{
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	position: absolute;
+	animation: opacidad 3s alternate;
+}
+.historia{
+	position: absolute;
+	width: 85%;
+	text-align: center;
+	top: 28%;
+	margin: 0% 7.5%;
+	color: white;
+	font-size: 20px;
+	background: rgba(0,0,0,0.6);
+	padding: 10px;
+	border-radius: 5px;
+	animation: opacidad 1s alternate;
+}
+#particles-js{
+	background:url(../img/fondo/3.jpg);
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	position: absolute;
+	animation: opacidad 1s alternate;	
+}
+.black{
+	background: #1F1E1E;
+}
+										/*ESTILOS DE LOS MODELOS DE IMPRESORA*/
+.modelos_de_estilos{
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	top: 8%;
+}
+.modelos_de_estilos img{
+	width: 50%;
+	animation: aparecer 1s alternate;
+}
+.estilos_de_modelos{
+	width: 30%;
+	margin: 5% 35%;	
+	position: relative;
+	animation:aparecer 1s alternate;
+}
+.hpfixed, .brotherfixed, .dellfixed, .canonfixed, .epsonfixed{
+	width: 150px;
+	position: absolute;
+	left: 100px;
+	top:280px;
+	position: fixed;
+	animation: desvanecer 2s alternate infinite;
+}
+
+@keyframes desvanecer {
+	from {opacity: 0.3;}
+	to {opacity: 1;}
+}
+.h7, .colornine{
+	display: none;
+}
+
+
+							/*RESPONSIVE*/
+
+@media (max-width:970px) {
+	.name, .matricula, .color, .mouse-icon, .ul a, .logo, .h6{
+		display: none;
+	}
+
+	.mision, .pv, .vision, .pm, .arriba p, footer, .historia{
+		font-size: 16px;
+	}
+}
+
+@media (max-width: 400px) {
+	.mision, .pm, .pv, .vision, .arriba p, footer, .h2modelo, .copyright{
+		font-size: 13px;
+	}
+}
+
+@media (max-width: 970px){
+	.dell img, .epson img, .hp img, .brother img, .canon img{
+		width: 120px;
+	}
+}
+
+@media (max-width: 400px){
+	.dell, .epson, .hp, .brother, .canon{
+		width: 750px;
+	}
+}
+
+
+@media (max-width: 450px){
+	.imgvision, .imgmision{
+		width: 35px;
+}
+
+}
+
+
+
+header{
+    width: 100%;
+    border-top: 2px solid blue;
+    background: rgba(0,0,0,0.6);
+    position: fixed;
+    z-index: 100;
+}
+
+ul li a:hover{
+   	color:#F4D042;
+	transition: all 0.5s;
+	border-bottom: 1px solid #f4d042;
+}
+
+
+#check, #h6{
+    display: none;
+}
+
+.menu{
+    width: 100%;
+    margin-top: 5px;
+}
+
+.menu ul{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.menu ul li{
+    list-style: none;
+}
+
+.menu ul li a{
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.icon-menu{
+    display: none;
+}
+
+@media screen and (max-width: 1170px){
+    
+    header{
+        position: fixed;
+        top: 0;
+        height: 60px;
+        z-index: 100;
+    }
+    .icon-menu{
+        display: block;
+        position: fixed;
+        right: 10px;
+        top: 10px;
+        padding: 5px;
+        font-size: 26px;
+        -webkit-transition: all 500ms;
+        transition: all 500ms;
+        border-radius: 10px;
+    }
+    .icon-menu:hover{
+        background: black;
+        color: white;
+        border-radius: 5px;
+        -webkit-transition: all 500ms;
+        transition: all 500ms;
+        cursor: pointer;
+    }
+    
+    .menu{
+        width: 350px;
+        position: absolute;
+        background:rgba(0,0,0,0.9);
+        height: 100vh;
+        left: -160%;
+        top: 52px;
+        -webkit-transition: all 100ms;
+        transition: all 100ms;
+    }
+    
+    .menu ul{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    
+    .menu ul li{
+        padding: 5px;
+    }
+    .menu ul li a{
+        color: black;
+        display: block;        
+    }
+
+    .h7{
+    	display: block;
+    	font-size: 16px;
+    	color: white;
+    	position: absolute;
+    	top: 45%;
+    	left: 2%;
+    }
+
+    .h6{
+    	display: none;
+    }
+    
+    #check:checked ~ .menu{
+       	left: 0px; 
+        -webkit-transition: all 500ms; 
+        transition: all 500ms;
+    }
+}
+
+.nosotros{
+	background: transparent;
+}
+
+@media (max-width: 970px){
+.colornine{
+	position: absolute;
+	top: 40%;
+	display: block;
+	background: rgba(0,0,0,0.6);
+	color: white;
+	padding: 0 10px;
+	width: 100%;
+}
+}
+
+@media (max-width: 600px){
+	.colornine{
+		display: none;
+	}
+}
+
+@media (max-width: 700px){
+	.modeloimpresoras div{
+		width: 50%;
+		position: relative;
+		top: -100%;
+	}
+}
+
+
+@media (max-width: 700px){
+	.hpfixed, .brotherfixed, .dellfixed, .canonfixed, .epsonfixed{
+		display: none;
+	}
+	.modelos_de_estilos img{
+	width: 100%;
+	animation: aparecer 1s alternate;
+}
+.estilos_de_modelos{
+	width: 60%;
+	margin: 5% 20%;	
+}
+.estilos_de_modelos p{
+	width: 100%;
+}
+}
+
+@media (max-width: 500px){
+	.o1, .o2, .o3, .o4, .o5, .o6{
+	width: 100%;
+	margin: 0px;
+	animation: aparecer 1s alternate;
+	padding: 50px 0px;
+	}	
+}
+
+@media (max-width: 500px){
+	.logitos p{
+		font-size: 10px;
+	}
+	.formulario form label{
+		font-size: 10px;
+	}
+}

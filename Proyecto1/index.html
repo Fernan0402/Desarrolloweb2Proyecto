@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/estilos.css">
+	<link rel="icon" href="img/favicon/favicon.ico">
+	<meta name="description" content="Compañía Dominicana especializada en ventas de impresoras y cartuchos">
+	<meta name="author" content="ColorPrint">
+	<meta name="keywords" content="impresoras,cartuchos,republica Dominicana,ventas,epson,hp,canon,java,html,ColorPrint">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="js/fontawesome-all.js"></script>
+ 	<link rel="stylesheet" href="iconos/css/fontello.css">
+
+<!--TITLE DE LA PAGINA-->	
+
+<script>
+
+		var contador = 0;
+		var cadena = "ColorPrint";
+		var interval = setInterval("setChar()",500);
+
+		function setChar () {
+			max = cadena.length;
+			document.title+=cadena[contador];
+
+			contador++;
+				if(contador>max) {contador=0;document.title="";}
+				if (cadena[contador]==" ") {document.title+="-";}
+		}
+
+</script>
+
+</head>
+
+<body>
+
+    <header>
+        <div class="content-menu">
+            <input type="checkbox" id="check">
+            <label class="icon-menu" for="check"></label>
+            <h6 class="h7"><span class="c">C</span><span class="oo">O</span><span class="l">L</span><span class="o">O</span><span class="r">R</span>Print</span></h6>
+            <nav class="menu">
+            	<h6 class="h6"><span class="c">C</span><span class="oo">O</span><span class="l">L</span><span class="o">O</span><span class="r">R</span>Print</span></h6>
+                <ul>
+      					<li><a class="active" id="a" href="index.html">INICIO</a></li>
+						<li><a id="a" href="ventas_de_impresoras.html">VENTAS DE IMPRESORAS</a></li>
+						<li><a id="a" href="ofertas_de_impresoras.html">OFERTAS DE IMPRESORAS</a></li>
+						<li><a id="a" href="contacto.html">CONTACTO</a></li>
+						<li><a id="a" href="nosotros.html">NOSOTROS</a></li>
+						<li><a id="a" target="_blank" href="https://www.itla.edu.do/">ITLA</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+			<div class="divname">
+								
+								<h1 class="name" id="name"></h1>
+								<h1 class="matricula" id="matricula"></h1>
+									<center>
+									<div class="color">
+										
+										<h1 class="bienvenido" id="bienvenido">Bienvenido a <span class="c">C</span><span class="oo">O</span><span class="l">L</span><span class="o">O</span><span class="r">R</span>Print</span></h1>
+
+									</div>
+										</center>
+										<div class="mouse-icon"><div class="scroll"></div></div>
+										
+			</div>	
+
+
+					<center>
+						<div class="colornine">
+									
+							<h1 class="bienvenidonine" id="bienvenido">Bienvenido a <span class="c">C</span><span class="oo">O</span><span class="l">L</span><span class="o">O</span><span class="r">R</span>Print</span></h1>
+
+						</div>
+					</center>
+
+
+
+		<div class="slider">
+			<ul>
+					<li><img src="img/slider/1.jpg"></li>
+					<li><img src="img/slider/2.jpg"></li>
+					<li><img src="img/slider/3.jpg"></li>
+					<li><img src="img/slider/4.jpg"></li>
+			</ul>
+		</div>	
+	
+	</div>
+
+<center>
+	
+	<div class="mision">
+
+		<img class="imgmision" src="img/logo/mision.png" alt="">
+
+			<h2 class="h1m">MISIÓN</h2>
+
+				<p class="pm"><strong><span class="c">C</span><span class="oo">O</span><span class="l">L</span><span class="o">O</span><span class="r">R</span>Print</span></strong>, tiene como misión vender a nuestros clientes impresoras de muy buena calidad, obteniendo para usted de manera eficaz y segura impresiones que usted necesita para lograr alcanzar aquello que desean. Con los emprendedores, pequeñas, medianas y grandes empresas, buscamos la manera en que sus procesos puedan volverse más eficiente. Relacionando nuestra misión con el desarrollo sostenible de cada una de las empresas que utilizan nuestros servicios.</p>
+
+	</div>
+
+		<div class="vision">
+
+			<img class="imgvision" src="img/logo/vision.png" alt="">
+	
+				<h2 class="h1v">VISIÓN</h2>
+
+				<p class="pv">Ser considerado, por sus clientes y socios estratégicos, que permitan alcanzar sus objetivos. Lograr una imagen de eficiencia, confiables y con buen trato hacia nuestros clientes.</p>
+		</div>
+
+</center>
+
+<div class="print"></div>
+
+<div class="arriba">
+	<center>
+		<img id="botomarriba" class="botomarriba" src="img/botones/bottom-top.png">
+			<p>Hay dos tipos de empresas, aquellas que trabajan para intentar cobrar más y aquellas que trabajan para cobrar menos. Nosotros seremos la segunda.</p>
+	</center>
+</div>
+
+		<footer>
+			<center>
+					<div class="footer">
+						<a class="fb" href="#">Facebook</a>
+						<a class="ig" href="#">Instagram</a>
+						<a class="tw" href="#">Twitter</a>
+						<a class="g" href="#">Google+</a>
+					</div>
+				<p class="copyright">2018 © Todos Los Derechos Reservados | JE</p>
+			</center>
+		</footer>	
+
+<script src="js/archivo.js"></script>	
+
+</body>
+</html>
+
+
+
+
